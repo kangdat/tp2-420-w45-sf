@@ -5,9 +5,9 @@
 
 ### verification des installations
  - Docker compose
-   ![Docker compose version](img/dockercomposeV.png)
+   ![Docker compose version](/img/dockercomposeV.png)
  - Docker
-   ![Docker version](img/dockerV.png)
+   ![Docker version](/img/dockerV.png)
 ### Creation de conteneurs
  - Conteneur apache
    ```
@@ -32,10 +32,10 @@
     ```
 
     ### verification reseau
-    ![validationDu reseau](img/validationReseau.png)
+    ![validationDu reseau](/img/validationReseau.png)
 
     ### verification mongo admin
-    ![validation mongo](img/mongoadmin.png)
+    ![validation mongo](/img/mongoadmin.png)
   
    
    
