@@ -15,7 +15,7 @@
    ```
  - Conteneur mongodb
    ```
-   sudo docker run --name mongodb -dit -v mongodb -e MONGO-INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=EncoreUneAutreBD mongo:latest
+   sudo docker run --name mongodb -dit -v mongodb -e MONGO-INITDB_ROOT_USERNAME=adminmongo -e MONGO_INITDB_ROOT_PASSWORD=EncoreUneAutreBD mongo:latest
    ```
  ### Creation du Reseau
 
