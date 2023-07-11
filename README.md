@@ -31,8 +31,12 @@
     sudo docker network connect mon_reseau apache
     ```
 
-    verification:
+    ### verification reseau
     ![validationDu reseau](img/validationReseau.png)
+
+    ### verification mongo admin
+    ![validation mongo](img/mongoadming.png)
+  
    
    
 
