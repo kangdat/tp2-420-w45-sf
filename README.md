@@ -5,16 +5,16 @@
 
 ### verification des installations
  - Docker compose
-   ![Docker compose version](img/dockercomposeV)
+   ![Docker compose version](img/dockercomposeV.png)
  - Docker
-   ![Docker version](img/dockerV)
+   ![Docker version](img/dockerV.png)
 
 ### Creation de conteneurs
  - Conteneur apache
-   ![commande pour conteneur apache](img/apachecontainer)
+   ![commande pour conteneur apache](img/apachecontainer.png)
 
  - Conteneur mongodb
-   ![commande pour conteneur mongodb](img/mongocontainer)
+   ![commande pour conteneur mongodb](img/mongocontainer.png)
 
    
  
