@@ -35,7 +35,7 @@
     ![validationDu reseau](img/validationReseau.png)
 
     ### verification mongo admin
-    ![validation mongo](img/mongoadming.png)
+    ![validation mongo](img/mongoadmin.png)
   
    
    
