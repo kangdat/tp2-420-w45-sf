@@ -11,10 +11,13 @@
 
 ### Creation de conteneurs
  - Conteneur apache
-   ![commande pour conteneur apache](img/apachecontainer.png)
-
+   ```
+   sudo docker run --name mongodb -it --name apache httpd:alpine -d
+   ```
  - Conteneur mongodb
-   ![commande pour conteneur mongodb](img/mongocontainer.png)
+   ```
+   sudo docker run --name mongodb -it -d -v mongodb -e MONGO-INITDB_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=EncoreuneAutreBD mongo:latest
+   ```
 
    
  
