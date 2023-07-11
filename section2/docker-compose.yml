@@ -1,0 +1,26 @@
+
+version: '3.1'
+
+services:
+
+  drupal:
+    build: .
+    image: mon_drupal
+    ports:
+      - 8080:80
+    volumes:
+      - /var/www/html/modules
+      - /var/www/html/profiles
+      - /var/www/html/themes
+      - /var/www/html/sites
+    restart: always
+
+  postgres:
+    image: postgres:11
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: user
+      POSTGRES_DB: drupal
+    volumes:
+      - /drupal-data:/var/lib/postgresq1data
+    restart: always
