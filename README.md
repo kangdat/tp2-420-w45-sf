@@ -11,16 +11,28 @@
 ### Creation de conteneurs
  - Conteneur apache
    ```
-   sudo docker run --name mongodb -it --name apache httpd:alpine -d
+    sudo docker container run -dit --name my-apache-app -p 8080:80 httpd:alpine
    ```
  - Conteneur mongodb
    ```
-   sudo docker run --name mongodb -it -d -v mongodb -e MONGO-INITDB_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=EncoreuneAutreBD mongo:latest
+   sudo docker run --name mongodb -dit -v mongodb -e MONGO-INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=EncoreUneAutreBD mongo:latest
    ```
- - Conteneur reseau
-   ```
-   sudo docker container run -d -it --name mon_reseau nginx
-   ```
+ ### Creation du Reseau
+
+  - creation du reseau
+    ```
+    sudo docker network create -d bridge mon_reseau
+    ```
+- ajout des containeurs au reseau
+    ```
+    sudo docker network connect mon_reseau mongodb
+    ```
+    ```
+    sudo docker network connect mon_reseau apache
+    ```
+
+    verification:
+    ![validationDu reseau](img/validationReseau.png)
    
    
 
